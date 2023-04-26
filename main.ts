@@ -29,6 +29,8 @@ basic.forever(function () {
         radio.sendNumber(5)
     } else if (joystickbit.getButton(joystickbit.JoystickBitPin.P13)) {
         radio.sendNumber(6)
+    } else {
+        stop()
     }
 })
 basic.forever(function () {
